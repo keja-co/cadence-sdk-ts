@@ -15,8 +15,5 @@
   },
   "devDependencies": {
     "typescript": "^4.0 || ^5.0"
-  },
-  "publishConfig": {
-    "registry": "https://github.com/keja-co/cadence-sdk-ts"
   }
 }
