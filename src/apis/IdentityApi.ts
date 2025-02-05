@@ -54,6 +54,32 @@ export class IdentityApi extends runtime.BaseAPI {
 
     /**
      */
+    async identitySessionStatusRetrieveRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<void>> {
+        const queryParameters: any = {};
+
+        const headerParameters: runtime.HTTPHeaders = {};
+
+        if (this.configuration && (this.configuration.username !== undefined || this.configuration.password !== undefined)) {
+            headerParameters["Authorization"] = "Basic " + btoa(this.configuration.username + ":" + this.configuration.password);
+        }
+        const response = await this.request({
+            path: `/api/identity/session-status/`,
+            method: 'GET',
+            headers: headerParameters,
+            query: queryParameters,
+        }, initOverrides);
+
+        return new runtime.VoidApiResponse(response);
+    }
+
+    /**
+     */
+    async identitySessionStatusRetrieve(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<void> {
+        await this.identitySessionStatusRetrieveRaw(initOverrides);
+    }
+
+    /**
+     */
     async identityUsersCreateRaw(requestParameters: IdentityUsersCreateRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<User>> {
         if (requestParameters['user'] == null) {
             throw new runtime.RequiredError(
