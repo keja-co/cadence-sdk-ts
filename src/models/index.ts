@@ -29,6 +29,7 @@ export * from './Permission';
 export * from './Qualification';
 export * from './Role';
 export * from './RolePermission';
+export * from './SessionStatus';
 export * from './State';
 export * from './User';
 export * from './UserRoleAssignment';
