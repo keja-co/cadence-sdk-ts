@@ -1,11 +1,11 @@
 {
   "name": "@keja-co/cadence-sdk",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "OpenAPI client for @keja-co/cadence-sdk",
   "author": "OpenAPI-Generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+    "url": "https://github.com/keja-co/cadence-sdk-ts.git"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
