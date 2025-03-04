@@ -61,6 +61,7 @@ __exportStar(require("./Permission"), exports);
 __exportStar(require("./Qualification"), exports);
 __exportStar(require("./Role"), exports);
 __exportStar(require("./RolePermission"), exports);
+__exportStar(require("./ServerMeta"), exports);
 __exportStar(require("./SessionStatus"), exports);
 __exportStar(require("./State"), exports);
 __exportStar(require("./User"), exports);

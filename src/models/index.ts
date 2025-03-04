@@ -45,6 +45,7 @@ export * from './Permission';
 export * from './Qualification';
 export * from './Role';
 export * from './RolePermission';
+export * from './ServerMeta';
 export * from './SessionStatus';
 export * from './State';
 export * from './User';
